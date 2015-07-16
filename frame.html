@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sean O'Neill - Portfolio</title>
+    <script type="text/javascript" src="urlobject.js"> </script>
+    <link href='http://fonts.googleapis.com/css?family=Oxygen' rel='stylesheet' type='text/css'>
+    <link href="bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" media="screen">
+    <style type="text/css">
+        .frame {
+            margin: 0 auto;
+            background-color: #ffffff;
+            padding: 10px;
+        }
+        #image {
+            height: 800px;
+        }
+    </style>
+</head>
+<body>
+    <div class="frame">
+        <h1>Color landscape</h2>
+        <img id="image" src="">
+    </div>
+    <script type="text/javascript">
+        var urlob = urlObject({'url': window.location.search});
+        console.log(urlob);
+        document.getElementById('image').src = "images/" + urlob.parameters.image;
+    </script>
+</body>
+</html>
