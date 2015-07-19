@@ -39,13 +39,14 @@
             </div>
         </div>
     <div class="frame">
-        <h1>Color landscape</h2>
+        <h1 id="title">Title</h2>
         <img id="image" src="">
     </div>
     <script type="text/javascript">
         var urlob = urlObject({'url': window.location.search});
         console.log(urlob);
         document.getElementById('image').src = "images/" + urlob.parameters.image;
+        document.getElementById('title').textContent = urlob.parameters.title;
     </script>
 </body>
 </html>

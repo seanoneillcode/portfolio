@@ -10,7 +10,7 @@
             background-color: #ffffff;
             padding: 10px;
         }
-        .gallery {
+        .lane {
             display: flex;
         }
         .navigation {
@@ -20,6 +20,14 @@
         .nav-link {
             padding-left: 0.5em;
             padding-right: 0.5em;
+        }
+        .gitem {
+            padding: 10px;
+            overflow: hidden;
+            width: 300px;
+        }
+        #page-title {
+            padding: 10px;
         }
     </style>
 </head>
@@ -38,32 +46,61 @@
                 <a href="art.html">Art</a>
             </div>
         </div>
-        <h2>Art</h4>
-        <div class="gallery">
-            <div>
+        <h2 id="page-title">Art</h4>
+        <div class="lane">
+            <div class="gitem">
             <h3>Color landscape</h2>
-                <a href="frame.html?image=02.png">
+                <a href="frame.html?image=02.png&title=Color landscape">
                     <img src="images/thumbs/t02.png">
                 </a>
             </div>
-            <div>
+            <div class="gitem">
             <h3>Sci-Fi portrait</h2>
-            <a href="frame.html?image=03.png">
+            <a href="frame.html?image=03.png&title=Sci-Fi portrait">
                     <img src="images/thumbs/t03.png">
                 </a>
             </div>
-            <div>
+            <div class="gitem">
             <h3>Stop drawing old men</h2>
-            <a href="frame.html?image=04.png">
+            <a href="frame.html?image=04.png&title=Stop drawing old men">
                     <img src="images/thumbs/t04.png">
                 </a>
             </div>
-            <div>
+            <div class="gitem">
             <h3>Threepwood</h2>
-            <a href="frame.html?image=05.png">
+            <a href="frame.html?image=05.png&title=Threepwood">
                     <img src="images/thumbs/t05.png">
                 </a>
             </div>
+        </div>
+        <div class="lane">
+            <div class="gitem">
+            <h3>Clap your hands</h2>
+                <a href="frame.html?image=01.png&title=Clap your hands">
+                    <img src="images/thumbs/t01.png">
+                </a>
+            </div>
+            <div class="gitem">
+            <h3>Bag of tricks</h2>
+            <a href="frame.html?image=06.png&title=Bag of tricks">
+                    <img src="images/thumbs/t06.png">
+                </a>
+            </div>
+            <div class="gitem">
+            <h3>Blind *</h2>
+            <a href="frame.html?image=07.png&title=Insight.js">
+                    <img src="images/thumbs/t07.png">
+                </a>
+            </div>
+            <div class="gitem">
+            <h3>X *</h2>
+            <a href="frame.html?image=08.png&title=Mind of fire">
+                    <img src="images/thumbs/t08.png">
+                </a>
+            </div>
+        </div>
+        <div class="lane">
+            <h4>Items marked with an asterix (*) were originally created by <a href="http://www.chetzar.com">Chet Zar</a></h4>
         </div>
     </div>
 </body>
