@@ -2,6 +2,7 @@
 <html>
 <head>
     <title>Sean O'Neill - Portfolio</title>
+    <script type="text/javascript" src="bower_components/jquery/dist/jquery.js"> </script>
     <link href='http://fonts.googleapis.com/css?family=Oxygen' rel='stylesheet' type='text/css'>
     <link href="bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" media="screen">
     <style type="text/css">
@@ -9,9 +10,6 @@
             margin: 0 auto;
             background-color: #ffffff;
             padding: 10px;
-        }
-        .lane {
-            display: flex;
         }
         .navigation {
             display: flex;
@@ -21,15 +19,18 @@
             padding-left: 0.5em;
             padding-right: 0.5em;
         }
-        .gitem {
-            padding: 10px;
-            overflow: hidden;
-            width: 300px;
-        }
         #page-title {
             padding: 10px;
         }
+        .grid-item {
+            width: 300px;
+            margin-bottom: 10px;
+        }
+        .grid-item--width2 {
+            width: 600px;
+        }
     </style>
+    <script src="bower_components/masonry.pkgd.min.js"></script>
 </head>
 <body>
     <div class="container">
@@ -55,61 +56,60 @@
             </div>
         </div>
         <h2 id="page-title">Art</h4>
-        <div class="lane">
-            <div class="gitem">
-            <h3>Color landscape</h2>
-                <a href="frame.html?image=02.png&title=Color landscape">
-                    <img src="images/thumbs/t02.png">
-                </a>
+
+        <div class="grid">
+            <div class="grid-item">
+                <img src="images/chet.png">
             </div>
-            <div class="gitem">
-            <h3>Sci-Fi portrait</h2>
-            <a href="frame.html?image=03.png&title=Sci-Fi portrait">
-                    <img src="images/thumbs/t03.png">
-                </a>
+            <div class="grid-item">
+                <img src="images/totem-1.png">
             </div>
-            <div class="gitem">
-            <h3>Stop drawing old men</h2>
-            <a href="frame.html?image=04.png&title=Stop drawing old men">
-                    <img src="images/thumbs/t04.png">
-                </a>
+            <div class="grid-item">
+                <img src="images/watercolor-ink.jpg">
             </div>
-            <div class="gitem">
-            <h3>Threepwood</h2>
-            <a href="frame.html?image=05.png&title=Threepwood">
-                    <img src="images/thumbs/t05.png">
-                </a>
+            <div class="grid-item grid-item--width2">
+                <img src="images/deer.jpg">
             </div>
-        </div>
-        <div class="lane">
-            <div class="gitem">
-            <h3>Clap your hands</h2>
-                <a href="frame.html?image=01.png&title=Clap your hands">
-                    <img src="images/thumbs/t01.png">
-                </a>
+            <div class="grid-item">
+                <img src="images/girl.png">
             </div>
-            <div class="gitem">
-            <h3>Bag of tricks</h2>
-            <a href="frame.html?image=06.png&title=Bag of tricks">
-                    <img src="images/thumbs/t06.png">
-                </a>
+            <div class="grid-item grid-item--width2">
+                <img src="images/sci-fi-portrait.jpg">
             </div>
-            <div class="gitem">
-            <h3>Blind *</h2>
-            <a href="frame.html?image=07.png&title=Insight.js">
-                    <img src="images/thumbs/t07.png">
-                </a>
+            <div class="grid-item">
+                <img src="images/totem-2.png">
             </div>
-            <div class="gitem">
-            <h3>X *</h2>
-            <a href="frame.html?image=08.png&title=Mind of fire">
-                    <img src="images/thumbs/t08.png">
-                </a>
+            <div class="grid-item grid-item--width2">
+                <img src="images/squid-ink.jpg">
+            </div>
+            <div class="grid-item">
+                <img src="images/zar.png">
+            </div>
+            <div class="grid-item">
+                <img src="images/tongue.png">
+            </div>
+            <div class="grid-item">
+                <img src="images/watercolor.jpg">
+            </div>
+            <div class="grid-item">
+                <img src="images/luke.png">
+            </div>            
+            <div class="grid-item grid-item--width2">
+                <img src="images/whale.jpg">
+            </div>
+            <div class="grid-item">
+                <img src="images/cider-image.jpg">
             </div>
         </div>
-        <div class="lane">
-            <h4>Items marked with an asterix (*) were originally created by <a href="http://www.chetzar.com">Chet Zar</a></h4>
-        </div>
+
     </div>
+    <script type="text/javascript">
+        $('.grid').masonry({
+            // options
+            itemSelector: '.grid-item',
+            columnWidth: 300,
+            gutter: 10
+        });
+    </script>
 </body>
 </html>
