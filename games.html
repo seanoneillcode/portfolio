@@ -19,23 +19,16 @@
             padding-left: 0.5em;
             padding-right: 0.5em;
         }
-        .frame {
-            height: 200px; /*can be anything*/
-            width: 600px; /*can be anything*/
-            position: relative;
+        .image-container {
+            display: flex;
+            flex-wrap: wrap;
         }
-        .middle-image {
-            max-height: 100%;  
-            max-width: 100%; 
-            width: auto;
-            height: auto;
-            position: absolute;  
-            top: 0;  
-            bottom: 0;  
-            left: 0;  
-            right: 0;  
-            margin: auto;
+        .image-item {
+            width: 347px;
+            height: 260px;
+            margin: 10px;
         }
+
 
     </style>
 </head>
@@ -64,16 +57,35 @@
         </div>
         <h2>Games</h2>
         
-        <h3>Statement</h3>
         <p>I love the idea that someone can create something that affects people emotionally. Some special games, art and music have affected me like this. I spend my free time thinking about and making games in the hope that I can create something that will affect other people.</p>
 
         <h3>Ultra Violet Gladiator</h3>
-        
-        <!-- <h3>Ultra Violet Gladiator</h3>
-        <p>Made for ludum dare in 48hrs with extra 48 hrs for release polish. Created using LibGdx in Java.
-        <a href="https://seancode.itch.io/ultra-violet-gladiator">More detail here</a></p>
-        <div class="frame"><img class="middle-image" src="images/gladiator.png"></div>
-        <iframe width="552" frameborder="0" height="167" src="https://itch.io/embed/113173"></iframe>
+        <div class="image-container">
+            <img class="image-item" src="images/gladiator.png">
+            <img class="image-item" src="images/gladiator-fight.gif">
+            <img class="image-item" src="images/gladiator-shop.png">
+        </div>
+        <h4>About</h4>
+        <p>For Ludum Dare 38, the theme was 'one room'. I created a single player arena fighter where the player runs around hitting enemies to survive. It was created and polished across 4 days.</p>
+        <h4>Development</h4>
+        <p>I chose to use the LibGdx framework as it handles the rendering, playing sounds, collision handling and input handling that I needed. It's very portable and produced a releasable build using Gradle with a few commands. </p>
+        <p>What worked
+            <ul>
+                <li>bright colors</li>
+                <li>smooth animations</li>
+                <li>music and sound effects were good</li>
+            </ul>
+            What did not work
+            <ul>
+                <li>enemies chose targets poorly</li>
+                <li>players could win by running away</li>
+                <li>music was repetitive</li>
+                <li>controls were too awkward</li>
+            </ul>
+            For the release version I used the Ludum Dare feedback to improve the game. The game needed contrast between the fights so I inserted a night time break scene now and then where players can talk to other people and upgrade their stats. The upgrades require tokens which are dropped by dead enemies, forcing the players to engage rather than run away. I added a better song, fixed the controls and added proper menus. In the end however, I felt that the gameplay was fundamentaly too simple to be fun. It needs a more complex attack and defense system. 
+        </p>
+        <h4><a href="https://seancode.itch.io/ultra-violet-gladiator">Get the game here</a></h4>
+        <!-- 
 
         <h3>Snowflake</h3>
         <p>A falling obsticle avoidance game, based on <a href="http://teknopants.com/games/uberleben/">Uberleben</a>. Created using Unity and Blender.</p>
