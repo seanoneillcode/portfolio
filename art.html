@@ -15,14 +15,6 @@
             border-bottom-style: solid;
             border-bottom-color: #f1f1f1;
         }
-        .navigation {
-            display: flex;
-            font-size: 2em;
-        }
-        .nav-link {
-            padding-left: 0.5em;
-            padding-right: 0.5em;
-        }
         #page-title {
             padding: 10px;
         }
@@ -51,31 +43,23 @@
     </style>
 </head>
 <body>
-    <a name="top"></a>
-    <div class="container">
-        <div class="navigation">
-            <div class="nav-link">
-                <a href="index.html">Home</a>
-            </div>
-             | 
-            <div class="nav-link">
-                <a href="games.html">Games</a>
-            </div>
-             | 
-            <div class="nav-link">
-                <a href="art.html">Art</a>
-            </div>
-             | 
-            <div class="nav-link">
-                <a href="software.html">Software</a>
-            </div>
-             | 
-            <div class="nav-link">
-                <a href="music.html">Music</a>
-            </div>
+    <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="index.html">Sean O'Neill</a>
         </div>
-        
-        <h1>Art</h1>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li><a href="games.html">Games</a></li>
+            <li class="active"><a href="art.html">Art</a></li>
+            <li><a href="software.html">Software</a></li>
+            <li><a href="music.html">Music</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="container">
+        <br><br><br>
         <h4>I enjoy creating drawings and paintings. </h4>
 
         <h2 id="page-title">Character Designs</h2>
@@ -103,12 +87,7 @@
             </div>
         </div>
 
-        <h2 id="page-title">Oil and Watercolor Portraits 
-        <a href="#top" class="top-link">
-            <span class="glyphicon glyphicon-chevron-up"></span>Top
-            <span class="glyphicon glyphicon-chevron-up"></span>
-        </a>
-        </h2>
+        <h2 id="page-title">Oil and Watercolor Portraits</h2>
         <h4>The last two of the oil paintings listed below are copies of originals done by 
         <a href="http://www.chetzar.com/">Chet Zar</a></h4>
         <div class="grid">
@@ -129,12 +108,7 @@
             </div>
         </div>
 
-        <h2 id="page-title">Pixel Art 
-            <a href="#top" class="top-link">
-                <span class="glyphicon glyphicon-chevron-up"></span>Top
-                <span class="glyphicon glyphicon-chevron-up"></span>
-            </a>
-        </h2>
+        <h2 id="page-title">Pixel Art</h2>
         <div class="grid">
             <div class="grid-item">
                 <img class="pixel-preview" src="images/lighttestsepia.png">
@@ -149,12 +123,6 @@
                 <img src="images/shardcrewrevision-large.png">
             </div>
         </div>
-        <h2 id="page-title">Fin
-            <a href="#top" class="top-link">
-                <span class="glyphicon glyphicon-chevron-up"></span>Top
-                <span class="glyphicon glyphicon-chevron-up"></span>
-            </a>
-        </h2>
 
     </div>
 </body>

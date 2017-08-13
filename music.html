@@ -5,74 +5,82 @@
     <link href='http://fonts.googleapis.com/css?family=Oxygen' rel='stylesheet' type='text/css'>
     <link href="bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" media="screen">
     <style type="text/css">
-        .container {
-            margin: 0 auto;
-            background-color: #ffffff;
-            padding: 10px;
-            width: 800px;
+        .music-container {
+            display:flex;
+            flex-wrap: wrap;
         }
-        .navigation {
-            display: flex;
-            font-size: 2em;
+        .music-item {
+            width: 300px;
         }
-        .nav-link {
-            padding-left: 0.5em;
-            padding-right: 0.5em;
-        }
+
     </style>
 </head>
 <body>
+<nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="index.html">Sean O'Neill</a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li><a href="games.html">Games</a></li>
+            <li><a href="art.html">Art</a></li>
+            <li><a href="software.html">Software</a></li>
+            <li class="active"><a href="music.html">Music</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
     <div class="container">
-        <div class="navigation">
-            <div class="nav-link">
-                <a href="index.html">Home</a>
+        
+        <br><br><br>
+        <div class="music-container">
+            <div>     
+                <h3>Generic Dance Tune</h3>
+                <p>Trance - 90s - fast</p>
+                <audio controls><source src="audio/dance-dance.ogg" type="audio/ogg">Your browser does not support the audio element.</audio>
             </div>
-             | 
-            <div class="nav-link">
-                <a href="games.html">Games</a>
+            <div>     
+                <h3>Synth Runner</h3>
+                <p>Gloomy - noir - dark</p>
+                <audio controls><source src="audio/synth-runner.ogg" type="audio/ogg">Your browser does not support the audio element.</audio>
             </div>
-             | 
-            <div class="nav-link">
-                <a href="art.html">Art</a>
+            <div>     
+                <h3>Magic Woods</h3>
+                <p>Orchestral - magic - soft</p>
+                <audio controls><source src="audio/06.mp3" type="audio/mp3">Your browser does not support the audio element.</audio>
             </div>
-             | 
-            <div class="nav-link">
-                <a href="software.html">Software</a>
+            <div>
+                <h3>Fighting Sprites!</h3>
+                <p>8bit - energetic - fighting</p>
+                <audio controls><source src="audio/01.mp3" type="audio/mp3">Your browser does not support the audio element.</audio>
             </div>
-             | 
-            <div class="nav-link">
-                <a href="music.html">Music</a>
+            <div>
+                <h3>Theme Song</h3>
+                <p>8bit - dramatic - purpose</p>
+                <audio controls><source src="audio/05.mp3" type="audio/mp3">Your browser does not support the audio element.</audio>
+            </div>
+            <div>
+                <h3>Adventuring Loop</h3>
+                <p>8bit - exploration - enjoyment</p>
+                <audio controls><source src="audio/03.mp3" type="audio/mp3">Your browser does not support the audio element.</audio>
+            </div>
+            <div>
+                <h3>Crossing the Mountain</h3>
+                <p>8bit - measured - travel</p>
+                <audio controls><source src="audio/02.mp3" type="audio/mp3">Your browser does not support the audio element.</audio>
+            </div>
+            <div>
+                <h3>Losing</h3>
+                <p>Acoustic</p>
+                <audio controls><source src="audio/losing.mp3" type="audio/mp3">Your browser does not support the audio element.</audio>
+            </div>
+            <div>
+                <h3>Entry for Modified Turing Test</h3>
+                <p>Acoustic - Vocals by Michalis Kirimlidis</p>
+                <audio controls><source src="audio/s6.mp3" type="audio/mp3">Your browser does not support the audio element.</audio>
             </div>
         </div>
-        <h2>Music</h4>
-        
-            <h3>Magic Woods</h3>
-            <p>Orchestral - magic - soft</p>
-            <audio controls><source src="audio/06.mp3" type="audio/mp3">Your browser does not support the audio element.</audio>
-
-            <h3>Fighting Sprites!</h3>
-            <p>8bit - energetic - fighting</p>
-            <audio controls><source src="audio/01.mp3" type="audio/mp3">Your browser does not support the audio element.</audio>
-
-            <h3>Theme Song</h3>
-            <p>8bit - dramatic - purpose</p>
-            <audio controls><source src="audio/05.mp3" type="audio/mp3">Your browser does not support the audio element.</audio>
-
-            <h3>Adventuring Loop</h3>
-            <p>8bit - exploration - enjoyment</p>
-            <audio controls><source src="audio/03.mp3" type="audio/mp3">Your browser does not support the audio element.</audio>
-
-            <h3>Crossing the Mountain</h3>
-            <p>8bit - measured - travel</p>
-            <audio controls><source src="audio/02.mp3" type="audio/mp3">Your browser does not support the audio element.</audio>
-
-            <h3>Losing</h3>
-            <p>Acoustic</p>
-            <audio controls><source src="audio/losing.mp3" type="audio/mp3">Your browser does not support the audio element.</audio>
-
-            <h3>Entry for Modified Turing Test</h3>
-            <p>Acoustic - Vocals by Michalis Kirimlidis</p>
-            <audio controls><source src="audio/s6.mp3" type="audio/mp3">Your browser does not support the audio element.</audio>
     </div>
 </body>
 </html>

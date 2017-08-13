@@ -5,20 +5,6 @@
     <link href='http://fonts.googleapis.com/css?family=Oxygen' rel='stylesheet' type='text/css'>
     <link href="bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" media="screen">
     <style type="text/css">
-        .container {
-            margin: 0 auto;
-            background-color: #ffffff;
-            padding: 10px;
-            width: 800px;
-        }
-        .navigation {
-            display: flex;
-            font-size: 2em;
-        }
-        .nav-link {
-            padding-left: 0.5em;
-            padding-right: 0.5em;
-        }
         .image-container {
             display: flex;
             flex-wrap: wrap;
@@ -28,42 +14,40 @@
             height: 260px;
             margin: 10px;
         }
-
+        @media (min-width: 1200px) {
+            .divisor {
+                display: none;
+            }
+        }
 
     </style>
 </head>
 <body>
-    <div class="container">
-        <div class="navigation">
-            <div class="nav-link">
-                <a href="index.html">Home</a>
-            </div>
-             | 
-            <div class="nav-link">
-                <a href="games.html">Games</a>
-            </div>
-             | 
-            <div class="nav-link">
-                <a href="art.html">Art</a>
-            </div>
-             | 
-            <div class="nav-link">
-                <a href="software.html">Software</a>
-            </div>
-             | 
-            <div class="nav-link">
-                <a href="music.html">Music</a>
-            </div>
+    <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="index.html">Sean O'Neill</a>
         </div>
-        <h2>Games</h2>
-        
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="games.html">Games</a></li>
+            <li><a href="art.html">Art</a></li>
+            <li><a href="software.html">Software</a></li>
+            <li><a href="music.html">Music</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="container">
+        <br><br><br>
+        <h4>I love games</h4>        
         <p>I love the idea that someone can create something that affects people emotionally. Some special games, art and music have affected me like this. I spend my free time thinking about and making games in the hope that I can create something that will affect other people.</p>
 
         <h3>Ultra Violet Gladiator</h3>
         <div class="image-container">
             <img class="image-item" src="images/gladiator.png">
             <img class="image-item" src="images/gladiator-fight.gif">
-            <img class="image-item" src="images/gladiator-night-scene.png">
+            <img class="image-item divisor" src="images/gladiator-night-scene.png">
             <img class="image-item" src="images/gladiator-shop.png">
         </div>
         <h4>About</h4>

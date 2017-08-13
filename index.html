@@ -14,93 +14,49 @@
             color: #000000;
         }
         a {
-            color: #fff;
+            color: #000;
             display: block;
         }
         img {
             width: 200px;
         }
-        .container {
-            margin: 0 auto;
-            background-color: #ffffff;
-            padding: 10px;
+        .main-container {
             align-items: center;
             text-align: center;
-            display: flex;
-        }
-        .button {
-            font-size: 32px;
-            padding: 8px;
-            margin: 8px;
-            text-decoration: none;
-            transition: all 4s;
-            background-color: #a50838;
-            color: #fff;
-        }
-        #button1:hover {
-            background: #D4002A;
-            transition: all 0.1s;
-            color: #fff;
-            text-decoration: none;
-        }
-        #button5:hover {
-            background: #E35200;
-            transition: all 0.1s;
-            color: #fff;
-            text-decoration: none;
-        }
-        #button3:hover {
-            background: #00956C;
-            transition: all 0.1s;
-            color: #fff;
-            text-decoration: none;
-        }
-        #button4:hover {
-            background: #40C500;
-            transition: all 0.1s;
-            color: #fff;
-            text-decoration: none;
-        }
-        #button2:hover {
-            background: #A50081;
-            transition: all 0.1s;
-            color: #fff;
-            text-decoration: none;
-        }
-        #button6:hover {
-            background: #A6D900;
-            transition: all 0.1s;
-            color: #fff;
-            text-decoration: none;
-        }
-        .main {
-            width: 50%;
-        }
-        .nav-buttons {
-            width: 50%;
-            border-width: 6px;
-            border-style: solid;
         }
     </style>
 </head>
 <body>
-    
-    <div class="container">
-        <div class="main">
-            <img src="images/cube.png">
-            <h1>Se&#225;n O'Neill</h1>
-            <h3>Game Developer | Artist | Software Engineer</h3>
-            </br>
-            </br>
+    <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="index.html">Sean O'Neill</a>
         </div>
-        <div class="nav-buttons">
-            <a href="games.html" id="button3" class="button">Games</a>
-            <a href="art.html" id="button4" class="button">Art</a>
-            <a href="software.html" id="button5" class="button">Software</a>
-            <a href="music.html"  id="button6" class="button">Music</a>
-            <a href="CV-Sean-ONeill.pdf" id="button2" class="button">Curriculum Vitae</a>
-            <a href="mailto:soneill.code@gmail.com" id="button1" class="button">Contact</a>
-        </div>        
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li><a href="games.html">Games</a></li>
+            <li><a href="art.html">Art</a></li>
+            <li><a href="software.html">Software</a></li>
+            <li><a href="music.html">Music</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>    
+    <div class="container">
+        <br><br><br>
+        <div class="main-container">
+            <div class="main">
+                <img src="images/cube.png">
+                <h1>Se&#225;n O'Neill</h1>
+                <h3>Game Developer | Artist | Software Engineer</h3>
+                </br>
+                </br>
+            </div>
+            <div>
+                <h3><a href="CV-Sean-ONeill.pdf">Curriculum Vitae</a></h3>
+                <h3><a href="mailto:soneill.code@gmail.com">Contact</a></h3>
+            </div>        
+        </div>
     </div>
     
 </body>
